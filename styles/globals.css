@@ -15,10 +15,24 @@ a {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;

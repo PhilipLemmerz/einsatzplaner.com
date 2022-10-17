@@ -1,0 +1,106 @@
+.headlineSection {
+    width: 40%;
+}
+
+.aboveTheFold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+    height: 70vh;
+}
+
+.headline {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #0058A2;
+}
+
+.headlineText {
+    font-size: 1.8rem;
+}
+
+.headlineBTN {
+    background-color: #159A2B;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #0058A2;
+    padding: 1rem 2rem 1rem 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.headlineBTN:hover {
+    background-color: #159a2ba8 ;
+    box-shadow: 1px 1px 3px #0059a2a2;
+}
+
+.imageAboveTheFold {
+    width: 30%;
+    object-fit: contain;
+}
+
+
+.functionsSection {
+    background-color: #0058A2;
+    padding: 12rem;
+    margin-bottom: 10rem;
+    transform: skewY(-4deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.functionsSectionContent { 
+    transform: skewY(4deg);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.functionBoxes {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    width: 80vw;
+}
+
+.functionBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    width: 25vw;
+    padding: 2rem;
+    border-radius: 5px;
+    color: #000000;    
+}
+
+.functionBox:hover {  
+    background-color: rgba(241, 241, 241, 0.74);
+    cursor: pointer;   
+}
+
+.functionBoxText {
+    text-align: center;
+}
+
+.functionBoxHeadline {
+    font-size: 1.7em;
+    color: #159A2B
+}
+
+.functionImage {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+} 

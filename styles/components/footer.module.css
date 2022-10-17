@@ -1,0 +1,53 @@
+.footer {
+    background-color: #0058A2;
+}
+
+.footerLogo {
+    object-fit: contain;
+    align-self: flex-start;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.footerNavigation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.contactBox {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.line {
+    border: 1px solid whitesmoke;
+    width: 60%;
+    align-items: center;
+}
+
+.footerBottom {
+    margin-top: 2rem;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    padding-bottom: 2rem;
+    column-gap: 1rem;
+}
+
+.contactBoxForm {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer
+}

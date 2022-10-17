@@ -1,0 +1,39 @@
+.header {
+    background-color: #F7FAFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.logo {
+    cursor: pointer;
+    width: 12vw;
+}
+
+.mainNavigation {
+    display: flex;
+    column-gap: 1.5rem;
+    color: #0058A2;
+    font-size: 1.4em;
+    font-weight: 600;
+    align-items: center;
+}
+
+.headerBTN {
+    background-color: #159A2B;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-left: 2rem;
+    color: whitesmoke;
+    box-shadow: 1px 1px 3px #0058A2;
+    font-weight: bold;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.headerBTN:hover {
+    background-color: #159a2bb0;
+}
