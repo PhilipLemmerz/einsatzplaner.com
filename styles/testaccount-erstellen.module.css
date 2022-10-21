@@ -1,0 +1,213 @@
+.sectionGetTestAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    z-index: 0;
+    margin: 5rem 0 5rem 0;
+}
+
+.headline {
+    color: #0058A2;
+    margin-bottom: 0;
+}
+
+.formBlock {
+    display: flex;
+    column-gap: 3rem;
+    margin-top: 3rem;
+    background-color: #0059a21c;
+    padding: 5rem;
+    border: 1px solid #0058A2;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.label {
+    font-size: 1em;
+    padding-bottom: 0.5rem;
+}
+
+.input {
+    width: 20vw;
+    height: 50px;
+    font-size: 1.5em;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border: 2px solid #9FA2A3;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    border: 2px solid #159a2b;
+    border-radius: 5px;
+}
+
+.secondStepBTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    align-self: flex-end;
+    background-color: #159a2bd2;
+    border: none;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.secondStepBTN:hover {
+    cursor: pointer;
+    background-color: #159a2bab;
+}
+
+.stepsBox {
+    display: flex;
+    column-gap: 4rem;
+}
+
+.back {
+    color: #0058A2;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    column-gap: 0.5rem;
+}
+
+.backText {
+    font-size: 0.7em;
+}
+
+.errorMessage {
+    color: rgb(247, 94, 94)
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingSpinner {
+    width: 100px;
+    height: 100px;
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #0058A2;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.spinnerContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .sectionGetTestAccount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        z-index: 0;
+        padding: 0 1rem 0 1rem;
+        margin: 5rem 0 5rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sectionGetTestAccount {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .headline {
+        font-size: 2em;
+    }
+
+    .headlineParagraph {
+        font-size: 1.2em;
+    }
+
+    .formBlock {
+        padding: 2rem;
+        column-gap: 1.5rem;
+    }
+
+    .input {
+        width: 20vw;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .secondStepBTN {
+        width: 19vw;
+        height: 40px;
+    }
+
+    .errorMessage {
+        font-size: 1em;
+    }
+
+    ;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .headline {
+        font-size: 1.8em;
+    }
+
+    .headlineParagraph {
+        font-size: 1em;
+    }
+
+    .formBlock {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+        width: 80vw;
+    }
+
+    .input {
+        width: 70vw;
+    }
+
+    .secondStepBTN {
+        align-self: center;
+        margin-top: 1rem;
+        width: 30vw;
+        height: 30px;
+        font-size: 1.1em
+    }
+
+
+}

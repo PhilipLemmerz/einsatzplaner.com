@@ -1,14 +1,20 @@
+
 .header {
     background-color: #F7FAFC;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 1rem 3rem 1rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
 }
 
 .logo {
     cursor: pointer;
-    width: 12vw;
+    width: 300px;
 }
 
 .mainNavigation {
@@ -21,6 +27,7 @@
 }
 
 .headerBTN {
+    display: block;
     background-color: #159A2B;
     border: none;
     outline: none;
@@ -36,4 +43,114 @@
 
 .headerBTN:hover {
     background-color: #159a2bb0;
+}
+
+.mobileNavigation {
+    display: none;
+}
+
+.logoMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .logo {
+        width: 200px;
+    }
+
+    .mainNavigation {
+        font-size: 1.1em;
+    }
+
+    .headerBTN {
+        display: block;
+        padding: 0.7rem;
+        margin-left: 1rem;
+    }
+
+    .mobileNavigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 200px;
+    }
+
+    .mainNavigation {
+        display: none;
+    }
+
+    .mobileNavigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobileNavigationList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1.5rem;
+        background-color: #0058A2;
+        color: black;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 2rem 0 2rem 0;
+        color: whitesmoke;
+        font-size: 1.5em;
+    }
+
+    .toggleBTN {
+        background-color: #0058A2;
+        border: none;
+        outline: none;
+        color: whitesmoke;
+        font-size: 1.8em;
+        border-radius: 2px;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .headerBTNMobile {
+        display: block;
+        background-color: #159A2B;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 0.7rem;
+        margin-right: 2rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .headerBTNMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .logoMobile {
+        display: block;
+        width: 50px;
+    }
+
+    .logo {
+        display: none;
+    }
 }

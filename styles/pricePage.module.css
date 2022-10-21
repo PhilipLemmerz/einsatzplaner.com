@@ -1,0 +1,383 @@
+.headlineSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    height: 80vh;
+    text-align: center;
+    padding: 0 5rem 0 5rem;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.headline {
+    color: #0058A2;
+    text-align: center;
+}
+
+.headlineText {
+    margin: 0;
+    text-align: center;
+}
+
+.freetierBox {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    margin: 5rem 0 3rem 0;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.freetierStep {
+    border: 1px solid #159a2b;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.numberIcon {
+    background-color: #0058A2;
+    box-shadow: 4px 4px 5px white;
+    padding: 1rem;
+    border-radius: 100%;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: -150px;
+    margin-left: -50px;
+}
+
+.buttonTestAccount {
+    background-color: #159A2B;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #0058A2;
+    padding: 1rem 2rem 1rem 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.buttonTestAccount:hover {
+    background-color: #159a2bdc;
+}
+
+.pricingSection {
+    display: flex;
+    background-color: #F7FAFC;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 0 5rem 0 5rem;
+}
+
+.pricingBox {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.highlighterPackage {
+    background-color: #f8e4ab;
+    box-shadow: 1px 1px 1px #0000;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.switchBackground {
+    margin-top: 4rem;
+    background-color: #0059a22a;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.switchHover {
+    background-color: #0058A2;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.switchNormal {
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricePackageS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0059a22c;
+    width: 28vw;
+    padding: 2rem;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.pricePackageM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0059a22c;
+    box-shadow: 2px 2px 10px #159a2b;
+    border: 1px solid #159a2b;
+    width: 28vw;
+    height: 600px;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.pricePackageL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0059a22c;
+    width: 28vw;
+    padding: 2rem;
+    border-radius: 5px;
+    height: 700px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    list-style: none;
+}
+
+.bulletPoint {
+    font-weight: 700;
+    padding-right: 0.5rem;
+}
+
+.plusIttem {
+    color: #159A2B;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+.priceBox {
+    font-size: 1.2em;
+    margin: 0rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0058A2
+}
+
+.packageBTN {
+    background-color: #159A2B;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+}
+
+.packageBTN:hover {
+    cursor: pointer;
+    background-color: #159a2bd2;
+}
+
+.hint {
+    font-size: 0.95em;
+}
+
+@media screen and ( max-height: 700px) {
+    .headline {
+        font-size: 2.2em;
+    }
+    
+}
+
+@media screen and (max-width: 1270px) {
+    .freetierStep {
+        width: 200px;
+        height: 150px;
+        padding: 1rem;
+    }
+
+    .stepParagraph {
+        font-size: 1em;
+    }
+
+    .numberIcon {
+        padding: 0.5rem;
+        font-size: 0.8em;
+        margin-top: -130px;
+        margin-left: -28px;
+    }
+
+    .buttonTestAccount {
+        padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+        font-size: 1.2em;
+    }
+
+    .hintPayment {
+        margin-top: 1.5rem;
+        font-size: 1em;
+    }
+
+    .pricePackageS {
+        width: 25vw;
+        padding: 1rem;
+        height: 500px;
+    }
+
+    .pricePackageM {
+        width: 25vw;
+        height: 600px;
+        padding: 1rem;
+    }
+
+    .pricePackageL {
+        width: 25vw;
+        padding: 1rem;
+        height: 700px;
+    }
+
+    .list {
+        font-size: 0.9em;
+        line-height: 1.6em;
+    }
+
+    .packageName {
+        font-size: 1.2em;
+    }
+
+    .priceBox {
+        font-size: 1em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .headlineSection {
+        height: auto;
+    }
+
+    .headline {
+        font-size: 2em;
+    }
+
+    .headlineSection {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .switchBackground {
+        width: 200px;
+        height: 40px;
+    }
+
+    .switchHover {
+        width: 100px;
+        height: 40px;
+        font-size: 0.7em;
+    }
+
+    .switchNormal {
+        width: 100px;
+        height: 40px;
+        font-size: 0.7em;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .pricingBox {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .pricePackageS {
+        width: 80vw;
+        padding: 1rem;
+        height: auto;
+        padding-bottom: 3rem
+    }
+
+    .pricePackageM {
+        width: 80vw;
+        padding: 1rem;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .pricePackageL {
+        width: 80vw;
+        padding: 1rem;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .highlighterPackage {
+        margin-top: 1rem;
+        font-size: 0.8em;
+    }
+
+    .packageName {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .priceBox {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .headline {
+        font-size: 1.5em;
+    }
+
+    .priceBox {
+        font-size: 1em;
+    }
+
+    .packageName {
+        font-size: 1.5em;
+    }
+
+}

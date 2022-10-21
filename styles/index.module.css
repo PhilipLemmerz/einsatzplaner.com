@@ -2,6 +2,15 @@
     width: 40%;
 }
 
+.noMargin {
+    padding: 0;
+    margin: 0;
+}
+
+.textCenter {
+    text-align: center;
+}
+
 .aboveTheFold {
     display: flex;
     align-items: center;
@@ -34,7 +43,7 @@
 }
 
 .headlineBTN:hover {
-    background-color: #159a2ba8 ;
+    background-color: #159a2ba8;
     box-shadow: 1px 1px 3px #0059a2a2;
 }
 
@@ -54,14 +63,14 @@
     align-items: center;
 }
 
-.functionsSectionContent { 
+.functionsSectionContent {
     transform: skewY(4deg);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
+
 .functionBoxes {
     margin-top: 2rem;
     display: flex;
@@ -69,7 +78,7 @@
     column-gap: 2rem;
     row-gap: 2rem;
     justify-content: center;
-    width: 80vw;
+    width: 85vw;
 }
 
 .functionBox {
@@ -78,14 +87,14 @@
     align-items: center;
     background-color: rgb(241, 241, 241);
     width: 25vw;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 5px;
-    color: #000000;    
+    color: #000000;
 }
 
-.functionBox:hover {  
+.functionBox:hover {
     background-color: rgba(241, 241, 241, 0.74);
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .functionBoxText {
@@ -93,14 +102,319 @@
 }
 
 .functionBoxHeadline {
-    font-size: 1.7em;
-    color: #159A2B
+    font-size: 1.5em;
+    color: #159A2B;
+    text-align: center;
 }
 
 .functionImage {
-    width: 400px;
-    height: 250px;
+    width: 80%;
+    height: auto;
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 2px 2px 5px #000000;
-} 
+    margin: 1rem 0 1rem 0;
+}
+
+.targetGroupSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12rem 5rem 12rem;
+}
+
+.callToActionHeadline {
+    margin: 0;
+    text-align: center;
+}
+
+.targetGroupParagraph {
+    text-align: center;
+}
+
+.conditionsBox {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    width: 700px;
+    margin: 3rem 0 3rem 0;
+}
+
+.condition {
+    display: flex;
+    column-gap: 1rem;
+    width: 300px;
+    padding: 2rem;
+    border: 1px solid #159A2B;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #159A2B;
+}
+
+.checkIcon {
+    color: #159A2B;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.callToAction {
+    margin-top: 5rem;
+    padding: 3rem 7rem 3rem 7rem;
+    transform: skewX(-20deg);
+    background-color: #0059a249;
+    border: 1px #0058A2 solid
+}
+
+.callToActionContent {
+    transform: skewX(20deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.useCaseSection {
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    padding: 12rem;
+
+}
+
+.headlineUseCase,
+.paragraphUseCase {
+    text-align: left;
+}
+
+.useCaseImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.imageUseCase {
+    object-fit: contain;
+    width: 500px;
+}
+
+.useCaseContent {
+    width: 60%
+}
+
+.useCaseHighlighter {
+    color: #0058A2;
+    font-weight: 600;
+}
+
+.quoteBox {
+    width: 80%;
+    background-color: #0059a223;
+    padding: 5rem;
+}
+
+
+@media screen and (max-height: 900px) and (min-width: 1000px) {
+    .headline {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #0058A2;
+    }
+
+    .imageAboveTheFold {
+        height: 40vh;
+    }
+
+    .aboveTheFold {
+        height: 80vh !important;
+    }
+}
+
+@media screen and (max-width: 1970px) {
+    .headline {
+        font-size: 2.8rem;
+    }
+
+    .headlineSection {
+        width: 50%;
+    }
+
+    .imageAboveTheFold {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .useCaseSection {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .headlineUseCase,
+    .paragraphUseCase {
+        text-align: center;
+    }
+
+    .useCaseContent {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quoteBox {
+        text-align: center;
+    }
+
+    .useCaseImages {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .imageUseCase {
+        width: 20vw;
+        height: 20vh;
+        object-fit: cover;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .headline {
+        font-size: 2.5em;
+    }
+
+    .headlineText {
+        font-size: 1.5em;
+    }
+
+    .aboveTheFold {
+        height: 65vh;;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .functionImage {
+        width: 95%;
+    }
+
+    .functionBoxHeadline {
+        font-size: 1.2em;
+    }
+
+    .functionsSection {
+        padding: 5rem;
+    }
+
+    .callToAction {
+        width: 100vw;
+        transform: skewX(0deg);
+        border: none;
+        padding: 3rem;
+    }
+
+    .callToActionContent {
+        transform: skewX(0deg);
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .aboveTheFold {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .headlineSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .headline {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .headlineText {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .imageAboveTheFold {
+        width: 60vw;
+    }
+
+    .headlineBTN {
+        margin: 2rem 0 1rem 0;
+    }
+
+    .functionBox {
+        width: 40vw;
+    }
+
+    .targetGroupSection {
+        padding: 0 5rem 5rem 5rem;
+    }
+
+    .useCaseImages {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 0;
+    }
+    
+    .imageUseCase {
+        width: 60vw;
+        height: calc(60vw/2);
+        object-fit: cover;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .functionBox {
+        width: 80vw;
+    }
+
+    .functionBoxHeadline {
+        font-size: 1.5em;
+    }
+
+    .conditionsBox {
+        width: 60vw;
+    }
+
+    .condition {
+        min-width: 80vw;
+    }
+
+    .targetGroupSection {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .useCaseSection {
+        padding: 0;
+    }
+
+    .paragraphUseCase {
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+    .quoteBox {
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+
+
+}

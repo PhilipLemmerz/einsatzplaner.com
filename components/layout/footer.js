@@ -6,22 +6,24 @@ import { BsBoxArrowInRight, BsWhatsapp, BsAt } from 'react-icons/bs';
 function Footer() {
     return (
         <footer className={styles.footer}>
+            <div className={styles.mobileLogoDiv}>
+                <Link href="/"><img className={styles.mobileFooterLogo} src="/logo-white.png" alt="logo-einsatzplaner.com" /></Link>
+            </div>
             <div className={styles.footerTop}>
                 <Link href="/"><img className={styles.footerLogo} src="/logo-white.png" alt="logo-einsatzplaner.com" /></Link>
-                <div>
+                <div className={styles.footerMenu}>
                     <h4> Weiterführende Informationen </h4>
                     <nav className={styles.footerNavigation}>
-                        <Link href="/">Funktionen</Link>
-                        <Link href="/">Zielgruppe</Link>
-                        <Link href="/">Preise</Link>
-                        <Link href="/">Blog</Link>
+                        <Link href="/">Start</Link>
+                        <Link href="/funktionen">Funktionen</Link>
+                        <Link href="/preise">Preise</Link>
                     </nav>
                 </div>
-                <div>
-                    <h4> Kontakt </h4>
-                    <Link href="/"><div className={styles.contactBoxForm}>
+                <div className={styles.footerContact}>
+                    <h4>Kontakt</h4>
+                    <Link href="/kontakt"><div className={styles.contactBoxForm}>
                         <BsBoxArrowInRight size={20} />
-                        <span>Konktaktformular</span>
+                        <span>Kontaktformular</span>
                     </div></Link>
                     <div className={styles.contactBox}>
                         <BsWhatsapp size={18} />
@@ -29,15 +31,14 @@ function Footer() {
                     </div>
                     <div className={styles.contactBox}>
                         <BsAt size={20} />
-                        <span> service@einsatzplaner</span>
+                        <span> service@einsatzplaner.com</span>
                     </div>
                 </div>
             </div>
             <hr className={styles.line}></hr>
             <nav className={styles.footerBottom}>
-                <Link href="/">Datenschutz</Link>
-                <Link href="/">AGB</Link>
-                <Link href="/">Impressum</Link>
+                <Link href="/datenschutz">Datenschutz</Link>
+                <Link href="/impressum">Impressum</Link>
             </nav>
 
         </footer>

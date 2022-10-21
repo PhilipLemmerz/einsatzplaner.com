@@ -1,0 +1,156 @@
+.headlineSection {
+    padding: 3rem 12rem 3rem 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.headline {
+    color: #0058A2;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.sectionOverview {
+    display: flex;
+    justify-content: center;
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    background-color: #0058A2;
+    width: 70%;
+}
+
+.functionBox {
+    border: #FFFFFF 2px solid;
+    width: 50%;
+    padding: 0 5rem 0 5rem;
+}
+
+.functionBox:hover {
+   background-color: #159a2b;
+   cursor: pointer;
+}
+
+.textContentOverview {
+    font-size: 0.8em;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.functionDetailHeadline {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.overViewImage {
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    border-radius: 100%
+}
+
+.functionDetailSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7FAFC;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.functionDetailLeft {
+    display: flex;
+    border: 1px solid #0058A2;
+    box-shadow: 4px 4px 5px #0058A2;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 60%;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+.functionDetailRight {
+    display: flex;
+    border: 1px solid #159a2b;
+    box-shadow: 4px 4px 5px #159a2b;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 60%;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 1500px) {
+    .headlineSection {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+
+    .functionBox {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .functionDetailLeft {
+        width: 80%;
+    }
+
+    .functionDetailRight {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headline {
+        font-size: 2em;
+    }
+
+    .functionDetailSection {
+        padding: 5rem 4rem 5rem 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .overViewImage {
+        width: 100%;
+        height: auto
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .headline {
+        font-size: 1.5em;
+    }
+
+    .headlineSection {
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .overview {
+        flex-direction: column;
+
+    }
+
+    .functionBox {
+        width: 100%;
+    }
+
+    .functionDetailSection {
+        padding: 5rem 1rem 5rem 1rem;
+        word-wrap: break-word;
+    }
+
+    .functionDetailHeadline {
+        font-size: 1.2em;
+        
+    }
+}
