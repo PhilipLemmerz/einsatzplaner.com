@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title> Einsatzplanung Software für Monteure und Personal</title>
         <meta name="description" content="Einsatzplaner Software - Personal und Monteure verplanen so einfach wie noch nie. Jetzt kostenfrei testen und Auslastung deutlich optimieren." />
-        
+
       </Head>
       <section className={styles.aboveTheFold}>
         <div className={styles.headlineSection}>
@@ -46,7 +46,7 @@ export default function Home() {
               <div className={styles.functionBox}>
                 <h3 className={styles.functionBoxHeadline}> Google-Maps Integration</h3>
                 <img src="/google-maps-funktion-index.jpg" className={styles.functionImage} alt="adressenfinder-funktion einsatzplaner" />
-                <p className={styles.functionBoxText}> Kundenadresse jederzeit im Blick durch google-maps Integration im Einsatzplaner.</p>
+                <p className={styles.functionBoxText}> Kundenadressen jederzeit im Blick durch google-maps Integration im Einsatzplaner.</p>
               </div>
             </Link>
             <Link href="/">
@@ -65,9 +65,9 @@ export default function Home() {
             </Link>
             <Link href="/">
               <div className={styles.functionBox}>
-                <h3 className={styles.functionBoxHeadline}>Zahlreiche Funktion in Entwicklung</h3>
+                <h3 className={styles.functionBoxHeadline}>Zahlreiche Funktionen in Entwicklung</h3>
                 <img src="/funktionen-entwicklung-index.jpg" className={styles.functionImage} alt="adressenfinder-funktion einsatzplaner" />
-                <p className={styles.functionBoxText}> monatlicher Release neue Funktionen in der Einsatzplaner Software - App Integration und Auftragsanalyse in Entwicklung </p>
+                <p className={styles.functionBoxText}> monatlicher Release neuer Funktionen in der Einsatzplaner Software - App Integration und Auftragsanalyse in Entwicklung </p>
               </div>
             </Link>
           </div>
@@ -78,9 +78,9 @@ export default function Home() {
         <h2 className={styles.textCenter}> Für wen eignet sich die Einsatzplaner Software?</h2>
         <p className={styles.targetGroupParagraph}>
           Unser Einsatzplaner kann in einer Vielzahl von Branchen effizient eingesetzt werden. Es wäre der falsche Ansatz hier eine Auflistung von Branchen oder
-          Firmen zu nennen, welche vom Einsatz unserer Einsatzplaner-Software profitieren. Vielmehr möchten wir Ihnen ein paar Rahmenbedingungen nennen in dem unser Einsatzplaner
+          Firmen zu nennen, welche vom Einsatz unserer Einsatzplaner-Software profitieren. Vielmehr möchten wir Ihnen ein paar Rahmenbedingungen nennen, in denen unser Einsatzplaner
           sein volles Potential ausspielen kann. Wenn Ihnen einer dieser Punkte bekannt vorkommt, kann Ihnen die Software mit Sicherheit helfen, die Personal Planung Ihrer Monteure
-          oder Teams zu verbessern.
+          oder Mitarbeiter zu verbessern.
         </p>
         <div className={styles.conditionsBox}>
           <div className={styles.condition}>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className={styles.condition}>
             <span className={styles.checkIcon}> <BsCheckSquareFill /> </span>
-            <p className={styles.noMargin}>Sie legen großen Wert auf eine einfache Bedienbarkeit einer Software</p>
+            <p className={styles.noMargin}>Sie legen großen Wert auf die einfache Bedienbarkeit einer Software</p>
           </div>
           <div className={styles.condition}>
             <span className={styles.checkIcon}> <BsCheckSquareFill /> </span>
@@ -102,22 +102,22 @@ export default function Home() {
         </div>
         <div className={styles.callToAction}>
           <div className={styles.callToActionContent}>
-            <h3 className={styles.callToActionHeadline}> Sie sind sich noch unsicher, ob unsere Einsatzplaner Software das Richtige für Sie ist?</h3>
+            <h3 className={styles.callToActionHeadline}> Sie sind sich noch unsicher, ob unsere Einsatzplaner-Software das Richtige für Sie ist?</h3>
             <p className={styles.textCenter}> Testen Sie kostenfrei und unverbindlich, ob Ihnen der Einsatzplaner hilft Ihre Einsatzplanung zu optimieren</p>
-            <Link href="/testaccount-erstellen"><button className={styles.headlineBTN}> kostenfrei testen </button></Link>
+            <Link href="/testaccount-erstellen"><button className={styles.callToActionBTN}> kostenfrei testen </button></Link>
           </div>
         </div>
       </section>
       <section className={styles.useCaseSection}>
         <div className={styles.useCaseContent}>
-          <h2 className={styles.headlineUseCase}> Use Case: <em>Das Soziale Kaufhaus</em> </h2>
+          <h2 className={styles.headlineUseCase}> Use case: <em>Das Soziale Kaufhaus</em> </h2>
           <p className={styles.paragraphUseCase}>
             Das Soziale Kaufhaus in Swisttal und Bonn arbeiten seit einem halben Jahr mit der Software von einsatzplaner.com. Das Unternehmen führt Möbelabholungen und Möbellieferungen in
             Köln und Bonn sowie Haushaltsauflösungen und Umzüge durch. Bevor wir den Einsatzplaner im Unternehmen integriert haben, wurde die Terminplanung mit Outlook
             umgesetzt. Neben technischen Problemen mit der Terminsynchronisierung bei der Einsatzplanung auf mehren Computern konnte keine optimale Routenplanung erzielt werden. Die Fahrer
-            fuhren in der Woche teilweise mehrfach in die selben Stadteile. Dies kosten Zeit, Geld, Ressourcen und war auch mit Blick auf unsere Umwelt nicht optimal. Viele
-            langjährige Mitarbeiter benötiten jedoch eine ganz einfache Bedienung der Einsatzplaner Software. Aus diesem Grund mussten diverse Softwarelösungen wieder verworfen werfen,
-            da die Terminierung von Aufträgen zu kompliziert war oder Termine aufwändig in einen Routen-Optimierungsprogramm importiert werden mussten.
+            fuhren in der Woche teilweise mehrfach in die selben Stadteile. Dies kostete Zeit, Geld, Ressourcen und war auch mit Blick auf unsere Umwelt nicht optimal. Viele
+            langjährige Mitarbeiter benötiten jedoch eine ganz einfache Bedienung der Einsatzplaner Software. Aus diesem Grund wurden diverse Softwarelösungen wieder verworfen. Die
+            Terminierung von Aufträgen war einfach zu kompliziert und Termine mussten aufwändig in einen Routen-Optimierungsprogramm importiert werden.
             <br></br> <br></br>
             <span className={styles.useCaseHighlighter}> Die Lösung: Software von Einsatzplaner.com </span>
             <br></br>
@@ -132,7 +132,7 @@ export default function Home() {
                 <em>
                   In einer Zeit von Personalmangel und Lieferzeiten von 4-6 Wochen müssen Ressourcen optimal eingesetzt werden.
                   Es ist viel einfacher vorhandene Ressourcen und Mitarbeiter effizienter einzusetzen als neue zu finden - und hierfür
-                  ist die Software von einsatzplaner.com das optimale Tool - einfach zu bedienen und mit auf das wesentliche reduzierten Features.
+                  ist die Software von einsatzplaner.com das optimale Tool - einfach zu bedienen und mit auf das Wesentliche reduzierten Features.
                 </em>
               </q>
               <br></br> <br></br>

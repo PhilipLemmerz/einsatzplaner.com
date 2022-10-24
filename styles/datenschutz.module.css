@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    text-align: center;
+}
+
+.headline {
+    color: #0058A2;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding: 2rem;
+    }
+
+    .headline {
+        font-size: 1.5rem;
+    }
+}

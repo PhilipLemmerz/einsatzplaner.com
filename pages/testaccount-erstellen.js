@@ -3,6 +3,7 @@ import styles from "../styles/testaccount-erstellen.module.css";
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { useRef, useState } from 'react';
 import router from "next/router";
+import Head from "next/head";
 
 function TestAccountPage(props) {
     const companyNameRef = useRef();
@@ -55,10 +56,14 @@ function TestAccountPage(props) {
 
     return (
         <Fragment>
+            <Head>
+                <title> Einsatzplaner Software - kostenfrei testen </title>
+                <meta name="description" content="Einsatzplaner Software - überzeugen Sie sich kostenfrei von Einsatzplaner.com" />
+            </Head>
             <section className={styles.sectionGetTestAccount}>
                 <h1 className={styles.headline}> Zugangsdaten kostenfrei erhalten: </h1>
                 <p className={styles.headlineParagraph}>
-                    Wir freuen uns das Sie einsatzplaner.com kostenfrei testen möchten - <br></br>
+                    Wir freuen uns, dass Sie einsatzplaner.com kostenfrei testen möchten - <br></br>
                     Füllen Sie einfach das Formular aus und Sie erhalten Ihre Zugangsdaten umgehend per E-Mail !
                 </p>
                 <form onSubmit={submitHandler}>
@@ -87,7 +92,7 @@ function TestAccountPage(props) {
                     </div>
                 </form>
                 {error && <p className={styles.errorMessage}> Bitte füllen Sie beide Felder aus & geben Sie eine gültige E-Mail Adresse an</p>}
-                {errorServer && <p className={styles.errorMessage}>Leider ist ein Fehler aufgetreten ! Versuchen Sie es bitte nocheinmal oder kontaktieren Sie den Support</p>}
+                {errorServer && <p className={styles.errorMessage}>Leider ist ein Fehler aufgetreten! Versuchen Sie es bitte nocheinmal oder kontaktieren Sie den Support</p>}
                 <div className={styles.stepsBox}>
                     <div>
                         {formStep === 0 && <p> Schritt 1 von 2</p>}

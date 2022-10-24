@@ -5,6 +5,7 @@ import { BsBoxArrowInRight, BsWhatsapp, BsAt } from 'react-icons/bs';
 
 function Footer() {
     return (
+       
         <footer className={styles.footer}>
             <div className={styles.mobileLogoDiv}>
                 <Link href="/"><img className={styles.mobileFooterLogo} src="/logo-white.png" alt="logo-einsatzplaner.com" /></Link>
@@ -40,6 +41,7 @@ function Footer() {
                 <Link href="/datenschutz">Datenschutz</Link>
                 <Link href="/impressum">Impressum</Link>
             </nav>
+            
 
         </footer>
     )

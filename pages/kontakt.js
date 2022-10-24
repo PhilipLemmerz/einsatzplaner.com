@@ -1,7 +1,8 @@
 import styles from "../styles/contactPage.module.css";
 import { Fragment, useRef } from "react";
 import { useRouter } from 'next/router';
-import { useState } from 'react'
+import { useState } from 'react';
+import Head from "next/head";
 
 function ContactPage(props) {
     const [loading, setLoading] = useState(false);
@@ -42,6 +43,10 @@ function ContactPage(props) {
 
     return (
         <Fragment>
+                <Head>
+                <title>Kontakt - Einsatzplaner.com</title>
+                <meta name="description" content="Einsatzplaner Software - Wir freuen uns auf Ihre Anfrage" />
+            </Head>
             <section className={styles.contactSection}>
                 <h1 className={styles.headline}> Kontaktformular</h1>
                 <p className={styles.headlineParagraph}> Wir freuen uns auf Ihre Fragen oder Wünsche und melden uns in Kürze zurück</p>
@@ -92,7 +97,7 @@ function ContactPage(props) {
                 <div className={styles.loadingSpinner}>
                 </div>
             </div>}
-            {error && <p className={styles.error}> Leider ist ein Fehler aufgetreten - Bitte versuchen Sie es nochmal oder kontaktieren Sie den Support </p>}
+            {error && <p className={styles.error}> Leider ist ein Fehler aufgetreten - Bitte versuchen Sie es noch einmal oder kontaktieren Sie den Support </p>}
         </Fragment>
     )
 }

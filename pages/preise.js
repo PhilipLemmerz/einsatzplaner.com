@@ -2,6 +2,7 @@ import styles from "../styles/pricePage.module.css";
 import { Fragment } from "react";
 import { useState } from "react";
 import Link from 'next/link';
+import Head from "next/head";
 
 function PricePage() {
     const [isYear, setSwitch] = useState(true);
@@ -30,6 +31,10 @@ function PricePage() {
 
     return (
         <Fragment>
+            <Head>
+                <title> Preise - Einsatzplaner Software </title>
+                <meta name="description" content="Einsatzplaner Software - Testen Sie unsere Terminplaner Software kostenfrei bevor Sie sich für eines unserer Pakete entscheiden" />
+            </Head>
             <section className={styles.headlineSection}>
                 <h1 className={styles.headline}> Testen Sie einsatzplaner.com komplett kostenfrei</h1>
                 <p className={styles.headlineText}>
@@ -38,15 +43,15 @@ function PricePage() {
                 <div className={styles.freetierBox}>
                     <div className={styles.freetierStep}>
                         <p className={styles.numberIcon}> 1 </p>
-                        <p className={styles.stepParagraph}> Test-Account über unser Kontaktformular anfordern </p>
+                        <p className={styles.stepParagraph}> Test-Account anfordern </p>
                     </div>
                     <div className={styles.freetierStep}>
                         <p className={styles.numberIcon}> 2 </p>
-                        <p className={styles.stepParagraph}>Wir geben Ihnen eine kostenfreie & unverbindliche online Einführung</p>
+                        <p className={styles.stepParagraph}>kostenfreie & unverbindliche online Einführung erhalten</p>
                     </div>
                     <div className={styles.freetierStep}>
                         <p className={styles.numberIcon}> 3 </p>
-                        <p className={styles.stepParagraph}>Sie können den Einsatzplaner mit allen Funktionen ausgibig testen</p>
+                        <p className={styles.stepParagraph}>Einsatzplaner mit allen Funktionen ausgibig testen</p>
                     </div>
                 </div>
                 <Link href="/testaccount-erstellen"><button className={styles.buttonTestAccount}> Testaccount anfordern </button></Link>
@@ -55,7 +60,7 @@ function PricePage() {
 
 
             <section className={styles.pricingSection}>
-                <h2 className={styles.headline}> Sie möchten Ihre Planung mit einsatzplaner.com optimieren ?</h2>
+                <h2 className={styles.headline}> Sie möchten Ihre Planung mit einsatzplaner.com optimieren?</h2>
                 <p className={styles.headlineText}>
                     Wir bieten Ihnen den Einsatzplaner in 3 unterschiedlichen Paketen an
                 </p>
@@ -71,7 +76,7 @@ function PricePage() {
                         {!isYear && <div className={styles.priceBox}> €  <span className={styles.price}>119</span> / pro Monat </div>}
                         <ul className={styles.list}>
                             <li><span className={styles.bulletPoint}>-</span> Freier Zugriff auf alle Funktionalitäten</li>
-                            <li><span className={styles.bulletPoint}>-</span> unbegrentzter Cloudspeicher für Bilder & Dokumente</li>
+                            <li><span className={styles.bulletPoint}>-</span> unbegrenzter Cloudspeicher für Bilder & Dokumente</li>
                             <li><span className={styles.bulletPoint}>-</span> Telefonsupport </li>
                             <li><span className={styles.bulletPoint}>-</span> Verplanen Sie bis zu 5 Teams oder Monteure</li>
                         </ul>
@@ -84,7 +89,7 @@ function PricePage() {
                         {!isYear && <div className={styles.priceBox}> €  <span className={styles.price}>189</span> / pro Monat </div>}
                         <ul className={styles.list}>
                             <li><span className={styles.bulletPoint}>-</span> Freier Zugriff auf alle Funktionalitäten</li>
-                            <li><span className={styles.bulletPoint}>-</span> unbegrentzter Cloudspeicher für Bilder & Dokumente</li>
+                            <li><span className={styles.bulletPoint}>-</span> unbegrenzter Cloudspeicher für Bilder & Dokumente</li>
                             <li><span className={styles.bulletPoint}>-</span> Telefonsupport </li>
                             <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> Verplanen Sie bis zu 15 Teams / Monteure</li>
                             <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> individuelles Firmenlogo im Planer </li>
@@ -93,12 +98,12 @@ function PricePage() {
                         <button className={styles.packageBTN}> kostenlos starten </button>
                     </div>
                     <div className={styles.pricePackageL}>
-                        <h3 className={styles.packageName}>Enterpise Paket </h3>
+                        <h3 className={styles.packageName}>Enterprise Paket </h3>
                         {isYear && <div className={styles.priceBox}> €  <span className={styles.price}>349</span> / pro Monat </div>}
                         {!isYear && <div className={styles.priceBox}> €  <span className={styles.price}>399</span> / pro Monat </div>}
                         <ul className={styles.list}>
                             <li><span className={styles.bulletPoint}>-</span> Freier Zugriff auf alle Funktionalitäten</li>
-                            <li><span className={styles.bulletPoint}>-</span> unbegrentzter Cloudspeicher für Bilder & Dokumente</li>
+                            <li><span className={styles.bulletPoint}>-</span> unbegrenzter Cloudspeicher für Bilder & Dokumente</li>
                             <li><span className={styles.bulletPoint}>-</span> Telefonsupport </li>
                             <li><span className={styles.bulletPoint}>-</span> individuelles Firmenlogo im Planer </li>
                             <li><span className={styles.bulletPoint}>-</span> 1 x Fragen Zoom-Call / Woche</li>

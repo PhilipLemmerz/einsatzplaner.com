@@ -29,7 +29,7 @@
     font-size: 1.8rem;
 }
 
-.headlineBTN {
+.headlineBTN, .callToActionBTN {
     background-color: #159A2B;
     border: none;
     border-radius: 5px;
@@ -93,7 +93,7 @@
 }
 
 .functionBox:hover {
-    background-color: rgba(241, 241, 241, 0.74);
+    background-color: rgba(241, 241, 241, 0.918);
     cursor: pointer;
 }
 
