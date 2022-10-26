@@ -2,17 +2,42 @@
 import '../styles/globals.css';
 import Header from '../components/layout/header';
 import Footer from '../components/layout/footer';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import { getCookie } from 'cookies-next';
 import Head from 'next/head';
 import Slider from '../components/layout/slider';
 import CookieConsent from '../components/layout/cookieConsent';
 import Script from 'next/script';
-function MyApp({ Component, pageProps }) {
-  const consent = getCookie('localConsent');
-  const consentMarketing = getCookie('marketingConsent');
-  const consentAnalytics = getCookie('analyticsConsent');
 
+
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const consentAll = getCookie('localConsent');
+    const consentMarketing = getCookie('marketingConsent');
+    const consentAnalytics = getCookie('analyticsConsent');
+
+    if (consentAll === true) {
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+        functionality_storage: 'granted',
+      });
+    }
+    if (consentMarketing === true) {
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'denied',
+        functionality_storage: 'granted',
+      });
+    }
+    if (consentAnalytics === true) {
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+        functionality_storage: 'denied',
+      });
+    }
+  }, []);
 
   return (
     <Fragment>
@@ -39,54 +64,8 @@ function MyApp({ Component, pageProps }) {
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-MC3M62V');`,
-
         }}
       />
-      {consent === true && (
-        <Script
-          id="consupd"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            gtag('consent', 'update', {
-              'ad_storage': 'granted',
-              'analytics_storage': 'granted',
-              'functionality_storage': 'granted',
-            });
-          `
-          }}
-        />
-      )}
-      {consentMarketing &&
-        <Script
-          id="consupd"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-          gtag('consent', 'update', {
-            'ad_storage': 'denied',
-            'analytics_storage': 'denied',
-            'functionality_storage': 'granted',
-          });
-        `
-          }}
-        />
-      }
-      {consentAnalytics &&
-        <Script
-          id="consupd"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-          gtag('consent', 'update', {
-            'ad_storage': 'granted',
-            'analytics_storage': 'granted',
-            'functionality_storage': 'denied',
-          });
-        `
-          }}
-        />
-      }
       <Header />
       <CookieConsent />
       <main>

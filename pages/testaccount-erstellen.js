@@ -43,12 +43,10 @@ function TestAccountPage(props) {
             headers: { "Content-Type": "application/json" }
         });
         if (response.ok) {
-            console.log(response)
             setLoading(false);
             setServerError(false);
             router.replace('danke');
         } else {
-            console.log('error');
             setLoading(false);
             setServerError(true);
         }

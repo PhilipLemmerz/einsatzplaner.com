@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title> Einsatzplanung Software für Monteure und Personal</title>
         <meta name="description" content="Einsatzplaner Software - Personal und Monteure verplanen so einfach wie noch nie. Jetzt kostenfrei testen und Auslastung deutlich optimieren." />
-
+        <meta name="facebook-domain-verification" content="aaid3nujn5brzuwsps7yi9kd3m237w" />
       </Head>
       <section className={styles.aboveTheFold}>
         <div className={styles.headlineSection}>
@@ -142,8 +142,8 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.useCaseImages}>
-          <img className={styles.imageUseCase} src="useCaseDasSozialeKaufhausFirst.jpg" alt="Das Soziale Kaufhaus & einsatzplaner.com" />
-          <img className={styles.imageUseCase} src="useCaseDasSozialeKaufhausSecond.jpg" alt="Das Soziale Kaufhaus & einsatzplaner.com" />
+          <img className={styles.imageUseCase} src="/usecase-das-soziale-kaufhaus-first.jpg" alt="Das Soziale Kaufhaus & einsatzplaner.com" />
+          <img className={styles.imageUseCase} src="/usecase-das-soziale-kaufhaus-second.jpg" alt="Das Soziale Kaufhaus & einsatzplaner.com" />
         </div>
       </section>
     </Fragment>

@@ -75,7 +75,11 @@
 
 @media screen and (max-width: 900px) {
     .logo {
-        width: 200px;
+        width: 208px;
+    }
+
+    .header {
+        padding: 1rem;
     }
 
     .mainNavigation {

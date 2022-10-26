@@ -3,8 +3,11 @@ import React, { Fragment, useEffect, useState, useRef } from 'react';
 import { setCookie, hasCookie } from 'cookies-next';
 import styles from '../../styles/components/cookieConsent.module.css';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 function CookieConsent(props) {
+    const router = useRouter();
+    const path = router.pathname;
     const [consent, setConsent] = useState(true);
     const [cofigCookies, setConfigCookies] = useState(false)
     const [analyticsCookies, setAnalyticsCookies] = useState(false);
@@ -14,33 +17,36 @@ function CookieConsent(props) {
         setConsent(hasCookie('localConsent'));
     }, []);
 
-    function acceptCookie() {
+    async function acceptCookie() {
         setConsent(true);
         setCookie('localConsent', 'true', { maxAge: 60 * 60 * 24 * 365 });
-        gtag('consent', 'update', {
+        await gtag('consent', 'update', {
             ad_storage: 'granted',
             analytics_storage: 'granted',
             functionality_storage: 'granted',
         });
+        router.replace(path);
     };
 
-    function configureCookies() {
+    async function configureCookies() {
         setConsent(true);
         if (marketingCookies) {
             setCookie('localConsent', 'false', { maxAge: 60 * 60 * 24 * 365 });
             setCookie('marketingConsent', 'true', { maxAge: 60 * 60 * 24 * 365 });
-            gtag('consent', 'update', {
+            await gtag('consent', 'update', {
                 ad_storage: 'granted',
                 functionality_storage: 'granted',
             });
-        }
+            router.replace(path);
+        };
         if (analyticsCookies) {
             setCookie('localConsent', 'false', { maxAge: 60 * 60 * 24 * 365 });
             setCookie('analyticsConsent', 'true', { maxAge: 60 * 60 * 24 * 365 });
-            gtag('consent', 'update', {
+            await gtag('consent', 'update', {
                 ad_storage: 'granted',
                 analytics_storage: 'granted',
             });
+            router.replace(path);
         }
     }
 
