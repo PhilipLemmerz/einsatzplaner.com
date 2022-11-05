@@ -44,6 +44,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title> Einsatzplanung Software für Ihre Monteure & Personal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="light only"></meta>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Script

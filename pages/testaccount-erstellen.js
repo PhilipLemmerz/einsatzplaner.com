@@ -68,25 +68,25 @@ function TestAccountPage(props) {
                     <div className={formStep === 0 ? styles.formBlock : styles.hide}>
                         <div className={styles.formGroup}>
                             <label htmlFor="company" className={styles.label}>Firmenname *</label>
-                            <input id="company" className={styles.input} type="text" ref={companyNameRef} placeholder="Mustermann GmbH"></input>
+                            <input required id="company" className={styles.input} type="text" ref={companyNameRef} placeholder="Mustermann GmbH"></input>
                         </div>
                         <div className={styles.formGroup}>
                             <label htmlFor="email" className={styles.label}>E-Mail Adresse *</label>
-                            <input id="email" className={styles.input} type="text" ref={emailRef} placeholder="info@gmbh.de"></input>
+                            <input required id="email" className={styles.input} type="text" ref={emailRef} placeholder="info@gmbh.de"></input>
                         </div>
-                        <div className={styles.secondStepBTN} onClick={toSecondStep}>weiter</div>
+                        <button type="button" className={styles.secondStepBTN} onClick={toSecondStep}>weiter</button>
                     </div>
 
                     <div className={formStep === 1 ? styles.formBlock : styles.hide}>
                         <div className={styles.formGroup}>
                             <label htmlFor="phone" className={styles.label}>Telefonnummer *</label>
-                            <input id="phone" className={styles.input} type="tel" ref={telRef} placeholder="0228 - 227 983 47"></input>
+                            <input required id="phone" className={styles.input} type="tel" ref={telRef} placeholder="0228 - 227 983 47"></input>
                         </div>
                         <div className={styles.formGroup}>
-                            <label htmlFor="name" className={styles.label}>Ansprechpartner</label>
-                            <input id="name" className={styles.input} type="text" ref={nameRef} placeholder="Herr Müller"></input>
+                            <label htmlFor="name" className={styles.label}>Ansprechpartner*</label>
+                            <input required id="name" className={styles.input} type="text" ref={nameRef} placeholder="Herr Müller"></input>
                         </div>
-                        <button className={styles.secondStepBTN} onClick={props.onSubmit}>absenden</button>
+                        <button className={styles.secondStepBTN} type="submit" onClick={props.onSubmit}>absenden</button>
                     </div>
                 </form>
                 {error && <p className={styles.errorMessage}> Bitte füllen Sie beide Felder aus & geben Sie eine gültige E-Mail Adresse an</p>}

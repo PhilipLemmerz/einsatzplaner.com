@@ -29,7 +29,13 @@
     font-size: 1.8rem;
 }
 
-.headlineBTN, .callToActionBTN {
+.imageProblemsTargetGroup {
+    width: 250px;
+    object-fit: cover;
+}
+
+.headlineBTN,
+.callToActionBTN {
     background-color: #159A2B;
     border: none;
     border-radius: 5px;
@@ -52,27 +58,56 @@
     object-fit: contain;
 }
 
-
 .functionsSection {
-    background-color: #0058A2;
-    padding: 12rem;
-    margin-bottom: 10rem;
-    transform: skewY(-4deg);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 12rem 5rem 12rem;
 }
 
-.functionsSectionContent {
+.targetGroupSectionContent {
     transform: skewY(4deg);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8rem 12rem 8rem 12rem;
+}
+
+.targetGroupProblems {
+    margin: 4rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.attentionIcon {
+    color: whitesmoke
+}
+
+.dotSpacer {
+    font-size: 2.5em;
+    letter-spacing: 1em;
+    margin-bottom: 1rem;
+}
+
+.imageProblemsTargetGroup {
+    border-radius: 5px;
+}
+
+.sectionWhenUsing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.functionSectionHeadline {
+    color: #0058A2;
+    text-align: center;
 }
 
 .functionBoxes {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     column-gap: 2rem;
@@ -85,31 +120,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(241, 241, 241);
+    background-color: #0058A2;
     width: 25vw;
     padding: 1rem;
     border-radius: 5px;
     color: #000000;
 }
 
-.functionBox:hover {
-    background-color: rgba(241, 241, 241, 0.918);
-    cursor: pointer;
-}
-
 .functionBoxText {
     text-align: center;
+    color: whitesmoke
 }
 
 .functionBoxHeadline {
     font-size: 1.5em;
-    color: #159A2B;
+    color: whitesmoke;
     text-align: center;
 }
 
 .functionImage {
     width: 80%;
-    height: auto;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 2px 2px 5px #000000;
@@ -117,10 +148,12 @@
 }
 
 .targetGroupSection {
+    margin-bottom: 6rem;
+    transform: skewY(-4deg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 12rem 5rem 12rem;
+    background-color: #0058A2;
 }
 
 .callToActionHeadline {
@@ -132,14 +165,19 @@
     text-align: center;
 }
 
+.headlineWhenUsing {
+    color: #0058A2;
+    text-align: center;
+}
+
 .conditionsBox {
     display: flex;
     flex-wrap: wrap;
     column-gap: 2rem;
+    max-width: 1200px;
     row-gap: 2rem;
     justify-content: center;
-    width: 700px;
-    margin: 3rem 0 3rem 0;
+    margin: 2rem 0 6rem 0;
 }
 
 .condition {
@@ -149,7 +187,13 @@
     padding: 2rem;
     border: 1px solid #159A2B;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px #159A2B;
+    background-color: rgb(241, 241, 241);
+}
+
+.separationLine {
+    width: 20vw;
+    color: whitesmoke;
+    margin: 2rem 0 2rem 0rem;
 }
 
 .checkIcon {
@@ -162,24 +206,22 @@
 .callToAction {
     margin-top: 5rem;
     padding: 3rem 7rem 3rem 7rem;
-    transform: skewX(-20deg);
     background-color: #0059a249;
-    border: 1px #0058A2 solid
 }
 
 .callToActionContent {
-    transform: skewX(20deg);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .useCaseSection {
+    background-color: #B6CFE4;
     display: flex;
     justify-content: center;
     column-gap: 5rem;
-    padding: 12rem;
-
+    padding: 7rem 12rem 12rem 12rem;
+    margin-top: 6rem;
 }
 
 .headlineUseCase,
@@ -197,6 +239,7 @@
 .imageUseCase {
     object-fit: contain;
     width: 500px;
+    border-radius: 5px;
 }
 
 .useCaseContent {
@@ -206,13 +249,105 @@
 .useCaseHighlighter {
     color: #0058A2;
     font-weight: 600;
+    text-align: center;
 }
 
-.quoteBox {
-    width: 80%;
-    background-color: #0059a223;
-    padding: 5rem;
+.testemonialSection {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0 0 0;
 }
+
+.testemonialImage {
+    border-radius: 100%;
+    width: 150px;
+    align-self: flex-end;
+    margin-top: -110px;
+    margin-right: -85px;
+}
+
+
+.quoteBox {
+    width: 40%;
+    padding: 2rem;
+    border: 1px solid #0058A2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stepSection {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 12rem 2rem 12rem;
+    align-items: center;
+}
+
+.headlineStepSection {
+    color: #0058A2;
+    text-align: center;
+}
+
+.stepContent {
+    display: flex;
+    column-gap: 5rem;
+    margin-top: 3rem;
+}
+
+.step {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.numberIcon {
+    background-color: #0058A2;
+    box-shadow: 4px 4px 5px white;
+    height: 40px;
+    padding: 1rem;
+    border-radius: 100%;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepHeadline {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.stepParagraph {
+    font-size: 1.2em;
+}
+
+.imageConsulting {
+    border-radius: 5px;
+    width: 25vw;
+}
+
+.callToActionLastSection {
+    margin: 0 12rem 5rem 12rem;
+}
+
+.callToActionLast {
+    margin-top: 5rem;
+    padding: 3rem 7rem 3rem 7rem;
+    border: 1px #0058A2 solid
+}
+
+.callToActionContentLast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callToActionHeadlineLast {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 
 
 @media screen and (max-height: 900px) and (min-width: 1000px) {
@@ -252,6 +387,10 @@
         padding: 3rem;
     }
 
+    .sectionWhenUsing {
+        padding: 0 3rem 0 3rem;
+    }
+
     .headlineUseCase,
     .paragraphUseCase {
         text-align: center;
@@ -274,10 +413,10 @@
         column-gap: 1rem;
         margin-bottom: 2rem;
     }
-    
+
     .imageUseCase {
         width: 20vw;
-        height: 20vh;
+        /* height: 20vh; */
         object-fit: cover;
         margin-top: 2rem;
     }
@@ -293,8 +432,29 @@
     }
 
     .aboveTheFold {
-        height: 65vh;;
+        height: 65vh;
     }
+
+    .targetGroupSectionContent {
+        padding: 8rem 6rem 8rem 6rem;
+    }
+
+    .stepSection {
+        padding: 6rem 6rem 0 6rem;
+    }
+
+    .callToActionLast {
+        padding: 3rem;
+    }
+
+    .callToActionLastSection {
+        margin: 0 6rem 5rem 6rem;
+    }
+
+    .quoteBox {
+        width: 70%;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -327,6 +487,7 @@
         flex-direction: column;
         align-items: center;
         height: auto;
+        margin-bottom: 5rem;
     }
 
     .headlineSection {
@@ -338,9 +499,32 @@
         margin-bottom: 2rem;
     }
 
+    .targetGroupProblems {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .targetGroupSectionContent {
+        padding: 8rem 3rem 3rem 3rem;
+    }
+
+    .imageProblemsTargetGroup {
+        margin-top: 2rem;
+    }
+
+    .dotSpacer {
+        display: none;
+    }
+
     .headline {
         font-size: 2em;
         text-align: center;
+    }
+
+    .headlineStepSection {
+        font-size: 2em;
     }
 
     .headlineText {
@@ -369,23 +553,12 @@
         justify-content: center;
         row-gap: 0;
     }
-    
+
     .imageUseCase {
         width: 60vw;
         height: calc(60vw/2);
         object-fit: cover;
         margin-top: 2rem;
-    }
-
-}
-
-@media screen and (max-width: 640px) {
-    .functionBox {
-        width: 80vw;
-    }
-
-    .functionBoxHeadline {
-        font-size: 1.5em;
     }
 
     .conditionsBox {
@@ -396,8 +569,38 @@
         min-width: 80vw;
     }
 
+    .stepContent {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .imageConsulting {
+        width: 40vw;
+    }
+
+    .callToActionLastSection {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .functionBox {
+        width: 80vw;
+    }
+
+    .functionsSection {
+        padding-top: 0;
+    }
+
+    .functionBoxHeadline {
+        font-size: 1.5em;
+    }
+
     .targetGroupSection {
-        padding: 0 2rem 2rem 2rem;
+        padding: 0;
     }
 
     .useCaseSection {
@@ -407,14 +610,51 @@
     .paragraphUseCase {
         width: 95%;
         font-size: 1.2em;
+        margin-top: 0;
     }
 
-    .quoteBox {
-        width: 100%;
-        padding: 2rem;
+    .stepSection {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
+    .imageConsulting {
+        width: 80vw;
+    }
 
+    .callToActionBTN {
+        font-size: 1.1em;
+    }
 
+    .testemonialImage {
+        width: 100px;
+        margin-top: -80px;
+        margin-right: -60px;
+    }
+
+    .imageProblemsTargetGroup {
+        width: 60vw;
+        object-fit: cover;
+    }
+
+    .stepContent {
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .step {
+        column-gap: 0.4rem;
+    }
+
+    .stepHeadline {
+        font-size: 1.2em;
+    }
+
+    .targetGroupSectionContent {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
 }

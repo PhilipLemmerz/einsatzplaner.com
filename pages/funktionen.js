@@ -26,7 +26,7 @@ function FunctionsPage() {
                                 <div className={styles.textContentOverview}>
                                     <h2 className={styles.functionDetailHeadline}>Intelligenter Terminfinder</h2>
                                     <img className={styles.overViewImage} src="/terminfinder-funktion-index.jpg" alt="einsatzplaner-terminfinder"></img>
-                                    <p className={styles.centerText}> Sparen Sie Zeit & Kosten durch die geografische Zusammenlegung von Terminen</p>
+                                    <p className={styles.centerText}> Sparen Sie Zeit & Kosten durch die geografische Zusammenlegung von Terminen.</p>
                                 </div>
                             </div>
                         </Link>
@@ -35,7 +35,7 @@ function FunctionsPage() {
                                 <div className={styles.textContentOverview}>
                                     <h2 className={styles.functionDetailHeadline}>Google Maps Integration</h2>
                                     <img className={styles.overViewImage} src="/google-maps-funktion-index.jpg" alt="einsatzplaner-google-maps"></img>
-                                    <p className={styles.centerText}> Haben Sie Ihre Kundeadressen & die Parkplatzsituation stehts im Blick. </p>
+                                    <p className={styles.centerText}> Haben Sie Ihre Kundenadressen & die Parkplatzsituation im Blick. </p>
                                 </div>
                             </div>
                         </Link>
@@ -53,7 +53,7 @@ function FunctionsPage() {
                                 <div className={styles.textContentOverview}>
                                     <h2 className={styles.functionDetailHeadline}>Integrierte Adressen Überprüfung</h2>
                                     <img className={styles.overViewImage} src="/adressenfinder-funktion-index.jpg" alt="einsatzplaner-adressenfinder"></img>
-                                    <p className={styles.centerText}>Verlassen Sie sich auf 100% richtige Kundenadressen</p>
+                                    <p className={styles.centerText}>Verlassen Sie sich auf 100% richtige Kundenadressen.</p>
                                 </div>
                             </div>
                         </Link>
@@ -62,16 +62,16 @@ function FunctionsPage() {
                                 <div className={styles.textContentOverview}>
                                     <h2 className={styles.functionDetailHeadline}>Foto Dokumentation</h2>
                                     <img className={styles.overViewImage} src="/bild-upload-funktion-index.jpg" alt="einsatzplaner-bilderUpload"></img>
-                                    <p className={styles.centerText}>Verbessern Sie Ihre Auftragsdokumentation mit Fotos</p>
+                                    <p className={styles.centerText}>Verbessern Sie Ihre Auftragsdokumentation mit Fotos.</p>
                                 </div>
                             </div>
                         </Link>
                         <Link href="#development">
                             <div className={styles.functionBox}>
                                 <div className={styles.textContentOverview}>
-                                    <h2 className={styles.functionDetailHeadline}>Weitere Features in der Entwicklung</h2>
-                                    <img className={styles.overViewImage} src="/funktionen-entwicklung-index.jpg" alt="einsatzplaner-entwicklung"></img>
-                                    <p className={styles.centerText}>Wir arbeiten auf Hochtouren an neuen Features um die Terminplaner Software für Sie zu verbessern</p>
+                                    <h2 className={styles.functionDetailHeadline}>Ortsunabhängig planen</h2>
+                                    <img className={styles.overViewImage} src="/einsatzplaner-live-synchronisierung.jpg" alt="einsatzplaner-entwicklung"></img>
+                                    <p className={styles.centerText}>Haben Sie Ihre Terminplanung von überall aus im Blick.</p>
                                 </div>
                             </div>
                         </Link>
@@ -82,7 +82,7 @@ function FunctionsPage() {
                         <h2 className={styles.centerText}>Terminplaner Funktionen im Detail</h2>
                     </div>
                     <div className={styles.functionDetailLeft} id="appointmentFinder">
-                        <h3 className={styles.functionDetailHeadline}> Intelligenter Terminfinder</h3>
+                        <h3 className={styles.functionDetailHeadline}> KI gestützter Intelligenter Terminfinder</h3>
                         <h4> Problem:</h4>
                         <p> Sie verplanen mehr als 2 Teams jeden Tag im Außeneinsatz - dann ist es völlig normal, dass Sie den Überblick verlieren, welches
                             Team wann an welchen Orten unterwegs ist. Ohne eine clevers Tool führt dies zwangsläufig dazu, dass Ihre Mitarbeiter oder Monteure wertvolle Zeit
@@ -101,7 +101,7 @@ function FunctionsPage() {
                         <h4>Problem:</h4>
                         <p> Eine nicht auffindbare Adresse oder eine schlechte Parkplatzsituation kann Ihren Tagesplan verzögern oder im schlimmsten Fall sogar zu nicht
                             fertiggestellten Tagestouren führen. Insbesondere in Großtstädten muss sich bei der Terminplanung ein genaues Bild der lokalen Begebenheiten
-                            gemacht werden. Ansonsten droht eine Verzögerung aufgrund von langen Laufwegen oder im schlimmsten Fall sogar das der Auftragsausfall,
+                            gemacht werden. Ansonsten droht eine Verzögerung aufgrund von langen Laufwegen oder im schlimmsten Fall sogar der Auftragsausfall,
                             da kein Parkplatz zur Verfügung steht.
                         </p>
                         <h4>Lösung:</h4>
@@ -115,7 +115,7 @@ function FunctionsPage() {
                         <h3 className={styles.functionDetailHeadline}> Einfache Bedienbarkeit</h3>
                         <h4> Problem:</h4>
                         <p> Eine gute & effiziente Terminplanung ist immer abhängig von den Mitarbeiterinnen und Mitarbeitern die die Planung erstellen. Häufig sind Planungslösungen sehr kompliziert oder verschiedene Software
-                            muss integriert werden. Dies führt nicht selten dazu, dass insebsondere nicht technik-affine Mitarbeiter mit der Terminplaner Software überfordert sind - dies führt zu Planungsfehlern,
+                            muss integriert werden. Dies führt nicht selten dazu, dass insbesondere nicht technik-affine Mitarbeiter mit der Terminplaner Software überfordert sind - dies führt zu Planungsfehlern,
                             genervten Mitarbeitern oder langen & teuren Einarbeitungen.
                         </p>
                         <h4>Lösung:</h4>
@@ -148,17 +148,16 @@ function FunctionsPage() {
                         </p>
                         <h4>Lösung:</h4>
                         <p>
-                            mit der Terminplaner Software einsatzplaner.com können Sie alle diese Dokumente direkt im Termin sammeln und zur Verfügung stellen. Sie benötigen keine extra Cloud-Speicher oder Kundenordner
+                            mit der Terminplaner Software einsatzplaner.com können Sie diese Dokumente direkt im Termin sammeln und zur Verfügung stellen. Sie benötigen keine extra Cloud-Speicher oder Kundenordner
                             auf Ihren Computern und jeder Kollege kann von überall aus die Dokumente einsehen. Dies sorgt für Transparenz und Dokumentation in Ihren
                             Aufträgen und bereitet Sie auf Folgeauträge oder Reklamationen optimal vor.
                         </p>
                     </div>
                     <div className={styles.functionDetailRight} id="development">
-                        <h3 className={styles.functionDetailHeadline}>Funktionen in der Entwicklung</h3>
+                        <h3 className={styles.functionDetailHeadline}>Ortsunabhängig planen</h3>
                         <p>
-                            Wir sind stetig mit der Entwicklung ausgewählter Funktionen für die Terminplaner Software beschäftigt. Wir möchten den Terminplaner jedoch nicht mit Features überladen die kaum benutzt werden
-                            und die ganze Bedienung verkomplizieren. Eine einfache Bedienbarkeit hat für uns immer höchste Priorität. Sie können sich jedoch auch in Zukunft auf Funktionen wie z.B. die Integration
-                            einer Monteur-App freuen mit denen Sie noch mehr aus Ihren vorhanden Ressourcen herausholen können.
+                            die Terminplaner-Software einsatzplaner.com ist von überall auf der Welt bedienbar und aktualisiert sich in Echtzeit. Egal ob im Urlaub, auf Geschäftsreisen oder beim Kunden
+                            vor Ort - Sie haben Ihre Einsatzplanung immer im Blick und können reagieren. Sie müssen nicht mehr vor Ort im Büro sein, um Ihre Monteure oder Mitarbeiter zu verplanen.
                         </p>
                     </div>
                 </section>

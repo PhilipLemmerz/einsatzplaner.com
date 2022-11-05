@@ -38,12 +38,12 @@ function PricePage() {
             <section className={styles.headlineSection}>
                 <h1 className={styles.headline}> Testen Sie einsatzplaner.com komplett kostenfrei</h1>
                 <p className={styles.headlineText}>
-                    Wir bieten ihnen die Möglichkeit unseren Einsatzplaner kostenfrei zu testen bevor Sie sich für ein Paket entscheiden.
+                    Wir bieten Ihnen die Möglichkeit unseren Einsatzplaner kostenfrei zu testen, bevor Sie sich für die Software entscheiden.
                 </p>
                 <div className={styles.freetierBox}>
                     <div className={styles.freetierStep}>
                         <p className={styles.numberIcon}> 1 </p>
-                        <p className={styles.stepParagraph}> Test-Account anfordern </p>
+                        <p className={styles.stepParagraph}> jetzt Test-Account anfordern </p>
                     </div>
                     <div className={styles.freetierStep}>
                         <p className={styles.numberIcon}> 2 </p>
@@ -77,10 +77,10 @@ function PricePage() {
                         <ul className={styles.list}>
                             <li><span className={styles.bulletPoint}>-</span> Freier Zugriff auf alle Funktionalitäten</li>
                             <li><span className={styles.bulletPoint}>-</span> unbegrenzter Cloudspeicher für Bilder & Dokumente</li>
-                            <li><span className={styles.bulletPoint}>-</span> Telefonsupport </li>
+                            <li><span className={styles.bulletPoint}>-</span> E-Mail Support </li>
                             <li><span className={styles.bulletPoint}>-</span> Verplanen Sie bis zu 5 Teams oder Monteure</li>
                         </ul>
-                        <button className={styles.packageBTN}> kostenlos starten </button>
+                        <Link href="/kontakt"><button className={styles.packageBTN}> kostenlos starten </button></Link>
                     </div>
                     <div className={styles.pricePackageM}>
                         <div className={styles.highlighterPackage}> Besonders beliebt </div>
@@ -90,12 +90,12 @@ function PricePage() {
                         <ul className={styles.list}>
                             <li><span className={styles.bulletPoint}>-</span> Freier Zugriff auf alle Funktionalitäten</li>
                             <li><span className={styles.bulletPoint}>-</span> unbegrenzter Cloudspeicher für Bilder & Dokumente</li>
-                            <li><span className={styles.bulletPoint}>-</span> Telefonsupport </li>
+                            <li><span className={styles.bulletPoint}>-</span> E-Mail Support </li>
                             <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> Verplanen Sie bis zu 15 Teams / Monteure</li>
                             <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> individuelles Firmenlogo im Planer </li>
-                            <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> 1 x Fragen Zoom-Call / Woche</li>
+                            <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> WhatsApp & Telefon Support</li>
                         </ul>
-                        <button className={styles.packageBTN}> kostenlos starten </button>
+                        <Link href="/kontakt"><button className={styles.packageBTN}> kostenlos starten </button></Link>
                     </div>
                     <div className={styles.pricePackageL}>
                         <h3 className={styles.packageName}>Enterprise Paket </h3>
@@ -104,14 +104,14 @@ function PricePage() {
                         <ul className={styles.list}>
                             <li><span className={styles.bulletPoint}>-</span> Freier Zugriff auf alle Funktionalitäten</li>
                             <li><span className={styles.bulletPoint}>-</span> unbegrenzter Cloudspeicher für Bilder & Dokumente</li>
-                            <li><span className={styles.bulletPoint}>-</span> Telefonsupport </li>
-                            <li><span className={styles.bulletPoint}>-</span> individuelles Firmenlogo im Planer </li>
-                            <li><span className={styles.bulletPoint}>-</span> 1 x Fragen Zoom-Call / Woche</li>
+                            <li><span className={styles.bulletPoint}>-</span> E-Mail Support </li>
+                            <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span> individuelles Firmenlogo im Planer </li>
+                            <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span>WhatsApp & Telefon Support</li>
+                            <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span>1 x Fragen Zoom-Call / Woche</li>
                             <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span>Verplanen Sie bis zu 30 Teams / Monteure</li>
-                            <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span>kostenfreier WhatsApp Support</li>
                             <li className={styles.additionalLI}><span className={styles.plusIttem}> + </span>kostenfreier Zugriff auf alle neuen Features</li>
                         </ul>
-                        <button className={styles.packageBTN}> kostenlos starten </button>
+                        <Link href="/kontakt"><button className={styles.packageBTN}> kostenlos starten </button></Link>
                     </div>
                 </div>
                 <p className={styles.hint}> alle Preise zzgl. MwSt.</p>

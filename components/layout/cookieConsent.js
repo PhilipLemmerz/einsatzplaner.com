@@ -78,8 +78,8 @@ function CookieConsent(props) {
                     <h2 className={styles.headlineConfig}> Welche Cookies dürfen wir verwenden?</h2>
                     <p className={styles.text}> Wir nutzen Cookies um unseren Internetauftritt immer weiter zu verbessern. Durch Ihr Feedback können wir auswerten, welche Inhalte für unsere Nutzer interessant
                         sind und unsere Werbebotschaften interessanter und ansprechender gestalten. Alle Informationen zum Datenschutz und zu Cookies
-                        finden Sie in unserer <u><Link href="/datenschutzerklärung">Datenschutzerklärung</Link></u>
-                        Vielen Dank für Ihre Hilfe!
+                        finden Sie in unserer <u><Link href="/datenschutzerklärung">Datenschutzerklärung</Link></u>.
+                         Vielen Dank für Ihre Hilfe!
                     </p>
                     <div className={styles.settingsController}>
                         <div className={styles.settingBox}>
@@ -100,11 +100,9 @@ function CookieConsent(props) {
                         <button className={styles.submitSettingsBTN} onClick={props.onSubmit}>speichern</button>
                     </div>
                 </div>
-
             </form>}
         </Fragment>
     );
-
 }
 
 export default CookieConsent
